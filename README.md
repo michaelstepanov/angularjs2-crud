@@ -24,4 +24,4 @@ So, the application's UI may reflect not exactly as expected, for example, posts
 
 ## Live demo
 
-...
+https://aqueous-taiga-93661.herokuapp.com/posts
