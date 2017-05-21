@@ -1,3 +1,55 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <a routerLink="/">Home</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/posts">Posts</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/users">Users</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+  <router-outlet></router-outlet>
+
+  <div id="source-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Source Code</h4>
+        </div>
+        <div class="modal-body">
+          <pre></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+
+        <ul class="list-unstyled">
+          <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+          <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
+          <li><a href="https://twitter.com/bootswatch">Twitter</a></li>
+          <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
+          <li><a href="../help/#api">API</a></li>
+          <li><a href="../help/#support">Support</a></li>
+        </ul>
+        <p>Made by <a href="https://github.com/michaelstepanov" rel="nofollow">Michael Stepanov</a>. Contact me at <a href="mailto:michael.o.stepanov@gmail.com">michael.o.stepanov@gmail.com</a>.</p>
+        <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
+        <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
+
+      </div>
+    </div>
+
+  </footer>
+</div>

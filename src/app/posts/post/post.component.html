@@ -1,0 +1,5 @@
+<div class="container">
+  <h2 *ngIf="post.id">Edit Post</h2>
+  <h2 *ngIf="!post.id">Create Post</h2>
+  <app-post-form [post]="post" [users]="users"></app-post-form>
+</div>

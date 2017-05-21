@@ -1,0 +1,11 @@
+<a routerLink="/posts/create" href="#" class="btn btn-success">
+    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create Post
+</a>
+
+<app-posts-list [posts]="posts"></app-posts-list>
+
+<app-pagination [currentPage]="currentPage"
+                [limit]="limit"
+                [totalCount]="totalCount"
+                (pageChange)="onPageChange($event)">
+</app-pagination>

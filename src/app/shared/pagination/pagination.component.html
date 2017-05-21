@@ -1,0 +1,31 @@
+<div class="row default">
+  <div class="col-lg-8">
+    <div class="bs-component">
+      <ul class="pagination">
+        <li (click)="selectPage(1, $event)" [class.disabled]="currentPage == 1">
+          <a href="" title="Go to first page">«</a>
+        </li>
+        <li (click)="selectPage(currentPage - 1, $event)" [class.disabled]="currentPage <= 1">
+          <a href="#" title="Go to previous page">‹</a>
+        </li>
+        <li class="disabled" (click)="cancelEvent($event)" *ngIf="(currentPage - range) > 1">
+          <a href="">...</a>
+        </li>
+        <li *ngFor="let page of pages | async" [class.active]="page == currentPage">
+          <a href="" (click)="selectPage(page, $event)">
+            {{page}}
+          </a>
+        </li>
+        <li class="disabled" (click)="cancelEvent($event)" *ngIf="(currentPage + range) < totalPages">
+          <a href="">...</a>
+        </li>
+        <li (click)="selectPage(currentPage + 1, $event)" [class.disabled]="currentPage >= totalPages">
+          <a href="#" title="Go to next page">›</a>
+        </li>
+        <li (click)="selectPage(totalPages, $event)" [class.disabled]="currentPage == totalPages">
+          <a href="" title="Go to last page">»</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
