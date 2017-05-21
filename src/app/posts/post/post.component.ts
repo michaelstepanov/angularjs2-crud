@@ -30,6 +30,8 @@ export class PostComponent implements OnInit {
     let id = this.route.snapshot.params.id;
     // If ID was passed
     if (id) {
+      // By this.post.id we check what title to show (Edit Post or Create Post)
+      this.post.id = id;
       // Get post data
       this.postService.get(id).subscribe(post => {
         this.post = post;
