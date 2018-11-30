@@ -10,10 +10,10 @@ import { Post } from './shared/post';
   providers: [PostService]
 })
 export class PostsComponent implements OnInit {
-  private currentPage;
-  private limit;
-  private totalCount;
-  private posts: Post[];
+  public currentPage;
+  public limit;
+  public totalCount;
+  public posts: Post[];
 
   constructor(
       private postsService: PostService,

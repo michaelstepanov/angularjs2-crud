@@ -11,13 +11,13 @@ import { Post } from 'app/posts/shared/post';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  private post: Post = {
+  public post: Post = {
     id: null,
     userId: null,
     title: null,
     body: null
   };
-  private users: any = []; // List of users
+  public users: any = []; // List of users
 
   constructor(
       private postService: PostService,
