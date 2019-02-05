@@ -1,6 +1,6 @@
 # Angular 4 CRUD Application
 
-The repository contains a small Angular.js 2 CRUD application.  
+The repository contains a small Angular 4 CRUD application.  
 The application uses fake test REST API service http://jsonplaceholder.typicode.com/ as a data provider.  
 Note: Requests and responses of the API are correct but data itself is not changed on the resource.  
 So, the application's UI may reflect not exactly as expected, for example, posts are not removed/updated for real.
