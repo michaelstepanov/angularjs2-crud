@@ -15,7 +15,7 @@ So, the application's UI may reflect not exactly as expected, for example, posts
 
 	cd FOLDER_NAME
     git clone https://github.com/michaelstepanov/angular4-crud.git
-    cd angularjs2-crud
+    cd angular4-crud
     npm install
 	
 ## To run
